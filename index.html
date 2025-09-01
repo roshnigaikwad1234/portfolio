@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roshni Gaikwad — Portfolio</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
+    body { background:#111; color:#fff; line-height:1.6; }
+
+    /* --- Header Section --- */
+    .header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:3rem 5%;
+      background:#000;
+      color:#fff;
+    }
+    .header-left {
+      flex:1;
+      text-align:center;
+    }
+    .header-left h1 {
+      font-size:3rem;
+      margin-bottom:0.5rem;
+      color:#ffda79;
+    }
+    .header-left h2 {
+      font-size:1.6rem;
+      color:#74b9ff;
+      margin-bottom:1rem;
+    }
+    .header-left p {
+      font-size:1.1rem;
+      max-width:500px;
+      margin:0 auto;
+      color:#ddd;
+    }
+    .header-right {
+      flex:0.6;
+      background:#000;
+      padding:1rem;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      border-radius:12px;
+    }
+    .header-right img {
+      width:320px;
+      height:auto;
+      border-radius:12px;
+      border:4px solid #ffda79;
+      object-fit:contain;
+    }
+
+    /* --- Sections --- */
+    section {
+      padding:3rem 2rem;
+      margin:2rem auto;
+      max-width:1100px;
+      border-radius:15px;
+    }
+    section h2 {
+      font-size:1.8rem;
+      margin-bottom:1rem;
+      color:#fff;
+      padding:0.5rem 1rem;
+      border-radius:8px;
+      display:inline-block;
+      background:rgba(0,0,0,0.3);
+    }
+
+    #projects { background:linear-gradient(135deg,#1dd1a1,#10ac84,#48dbfb); }
+    #skills { background:linear-gradient(135deg,#54a0ff,#2e86de,#5f27cd); }
+    #education { background:linear-gradient(135deg,#ff6b6b,#ee5253,#ff9ff3); }
+    #achievements { background:linear-gradient(135deg,#48dbfb,#00d2d3,#1dd1a1); }
+    #contact { background:#000; text-align:center; padding:4rem 2rem; }
+
+    p, li { margin:0.6rem 0; color:#fff; }
+    ul { padding-left:1.2rem; }
+
+    /* --- Projects Section --- */
+    .projects-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:1.5rem;
+      margin-top:1.5rem;
+    }
+    .project-card {
+      background:rgba(0,0,0,0.3);
+      border-radius:12px;
+      overflow:hidden;
+      text-align:center;
+      padding:1rem;
+    }
+    .project-card img {
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:10px;
+      margin-bottom:0.8rem;
+    }
+    .project-card h3 {
+      color:#ffda79;
+      margin-bottom:0.5rem;
+    }
+
+    /* --- Skills --- */
+    .skills span {
+      display:inline-block;
+      margin:0.3rem;
+      padding:0.4rem 0.8rem;
+      background:rgba(255,255,255,0.3);
+      border-radius:20px;
+      color:#fff;
+      font-weight:500;
+    }
+
+    /* --- Contact Section --- */
+    #contact h2 {
+      background:none;
+      font-size:2rem;
+      margin-bottom:2rem;
+    }
+    .contact-info p {
+      font-size:1.2rem;
+      margin:0.5rem 0;
+    }
+    .contact-info a {
+      color:#ffda79;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .contact-info a:hover { text-decoration:underline; }
+
+    footer {
+      text-align:center;
+      padding:1rem;
+      font-size:0.9rem;
+      background:#111;
+      color:#aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Roshni Gaikwad</h1>
+      <h2>Web and App Developer</h2>
+      <p>I'm a passionate learner exploring AI-driven solutions in mobile and web apps. My focus areas include plant disease detection, diet recommendation, and chatbot development.</p>
+    </div>
+    <div class="header-right">
+      <img src="me.jpg" alt="Roshni Gaikwad">
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="cs.jpg" alt="Project 1">
+        <h3>AI Diet Recommendation App</h3>
+        <p>Personalized diet plans using TensorFlow Lite & React Native.</p>
+      </div>
+      <div class="project-card">
+        <img src="css.jpg" alt="Project 2">
+        <h3>Plant Disease Detection</h3>
+        <p>Mobile app with Flask API & Keras model for farmers.</p>
+      </div>
+      <div class="project-card">
+        <img src="csss.jpg" alt="Project 3">
+        <h3>College Query Chatbot</h3>
+        <p>NLP-based chatbot answering student queries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Python</span><span>React Native</span><span>TensorFlow</span><span>Flask</span>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>B.E. in Information Technology — Savitribai Phule Pune University (CGPA: 9.48)</p>
+  </section>
+
+  
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:roshigaikwad36919">roshigaikwad3619@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:9307027200">9307027200</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/roshnigaikwad3619" target="_blank">github.com/your-github-username</a></p>
+    </div>
+  </section>
+
+  <footer>© 2025 Roshni Gaikwad</footer>
+
+</body>
+</html>
