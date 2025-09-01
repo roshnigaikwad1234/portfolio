@@ -3,8 +3,7 @@
 Welcome to my personal portfolio website!  
 This site showcases my projects, skills, education, and achievements.  
 
-## 🚀 Live Portfolio
-🔗 [View My Portfolio](https://your-username.github.io/portfolio/)  
+https://roshnigaikwad1234.github.io/portfolio/
 
 ## 🛠️ Tech Stack
 - HTML5  
